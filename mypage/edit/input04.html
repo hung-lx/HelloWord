@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!--#include virtual="/assets/include/viewport.html" -->
+  <title>希望職種編集画面</title>
+  <!--#include virtual="/assets/include/stylesheet.html" -->
+</head>
+
+<body class="is-fluid">
+  <div class="l-page">
+    <div class="l-mypage-container">
+      <!--#include virtual="/assets/include/spmenu/spmenu_login.html" -->
+      <!--#include virtual="/assets/include/header/header_mypage_login.html" -->
+      <!--#include virtual="/assets/include/sidebar.html" -->
+      <main class="l-main t-color-optional">
+        <section class="l-container-ml">
+          <div class="l-inner">
+            <div class="section-header">
+              <p class="heading heading--large">会員情報</p>
+            </div>
+            <!-- /section-header -->
+            <div class="l-container-ls">
+              <div class="table p-table--fixed">
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">希望条件</p>
+                  </div>
+                  <div class="table-section__body p-table-section__body--blank"></div>
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">勤務地</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--long">
+                        <select id="prefecture_code" class="js-custom-selectbox" style="display: none;">
+                          <option value="">こだわらない</option>
+                          <option value="">東京23区</option>
+                          <option value="">東京23区外</option>
+                          <option value="">北海道</option>
+                          <option value="">青森</option>
+                          <option value="">岩手</option>
+                          <option value="">宮城</option>
+                          <option value="">秋田</option>
+                          <option value="">山形</option>
+                          <option value="">福島</option>
+                          <option value="">茨城</option>
+                          <option value="">栃木</option>
+                          <option value="">群馬</option>
+                          <option value="">埼玉</option>
+                          <option value="">千葉</option>
+                          <option value="">神奈川</option>
+                          <option value="">新潟</option>
+                          <option value="">富山</option>
+                          <option value="">石川</option>
+                          <option value="">福井</option>
+                          <option value="">山梨</option>
+                          <option value="">長野</option>
+                          <option value="">岐阜</option>
+                          <option value="">静岡</option>
+                          <option value="">愛知</option>
+                          <option value="">三重</option>
+                          <option value="">滋賀</option>
+                          <option value="">京都</option>
+                          <option value="">大阪</option>
+                          <option value="">兵庫</option>
+                          <option value="">奈良</option>
+                          <option value="">和歌山</option>
+                          <option value="">鳥取</option>
+                          <option value="">島根</option>
+                          <option value="">岡山</option>
+                          <option value="">広島</option>
+                          <option value="">山口</option>
+                          <option value="">徳島</option>
+                          <option value="">香川</option>
+                          <option value="">愛媛</option>
+                          <option value="">高知</option>
+                          <option value="">福岡</option>
+                          <option value="">佐賀</option>
+                          <option value="">長崎</option>
+                          <option value="">熊本</option>
+                          <option value="">大分</option>
+                          <option value="">宮崎</option>
+                          <option value="">鹿児島</option>
+                          <option value="">沖縄</option>
+                          <option value="">海外</option>
+                          <option value="">在宅</option>
+                          <option value="" selected="">---</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>勤務地を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">職種</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--long u-pdr-0 u-width-100-sm">
+                        <div class="u-block u-width-30-sm u-left-sm">
+                          <input id="web1" class="" type="checkbox" name="web1">
+                          <label class="u-normal" for="web1">Webディレクター</label>
+                        </div>
+                        <div class="u-block u-width-30-sm u-left-sm">
+                          <input id="web2" class="" type="checkbox" name="web2">
+                          <label class="u-normal" for="web2">Webデザイナー</label>
+                        </div>
+                        <div class="u-block u-width-30-sm u-left-sm">
+                          <input id="web3" class="" type="checkbox" name="web3">
+                          <label class="u-normal" for="web3">Webエンジニア</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>職種を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">雇用形態</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--long">
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web4" class="" type="checkbox" name="web4">
+                          <label class="u-normal u-pdr-40" for="web4">正社員</label>
+                        </div>
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web5" class="" type="checkbox" name="web5">
+                          <label class="u-normal u-pdr-40" for="web5">契約社員</label>
+                        </div>
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web6" class="" type="checkbox" name="web6">
+                          <label class="u-normal u-pdr-40" for="web6">派遣社員</label>
+                        </div>
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web7" class="" type="checkbox" name="web7">
+                          <label class="u-normal u-pdr-40" for="web7">業務委託</label>
+                        </div>
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web8" class="" type="checkbox" name="web8">
+                          <label class="u-normal u-pdr-40" for="web8">アルバイト</label>
+                        </div>
+                        <div class="fp-radio u-block-sm u-mgl-0 u-width-25-lg u-left u-clear-sm">
+                          <input id="web9" class="" type="checkbox" name="web9">
+                          <label class="u-normal u-pdr-40" for="web9">インターン</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>雇用形態を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">給与</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body fp-select__input--long">
+                    <div class="form-parts">
+                      <select id="prefecture_code" class="js-custom-selectbox" style="display: none;">
+                        <option value="">こだわらない</option>
+                        <option value="">時給</option>
+                        <option value="">日給</option>
+                        <option value="">月給</option>
+                        <option value="">年俸</option>
+                        <option value="" selected="">---</option>
+                      </select>
+                    </div>
+                    <div class="form-parts">
+                      <p class="fp-text u-pdr-10 fp-radio">
+                        <input id="first_name" class="fp-text__input" type="text" name="first_name" placeholder="">
+                      </p>
+                      <label class="fp-label fp-radio u-mgl-0" for="first_name">円以上</label>
+                    </div>
+                    <div class="error-msg">
+                      <p>給与を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+              </div>
+              <!-- /table -->
+            </div>
+            <!-- /container -->
+            <div class="l-container-ls">
+              <form action="">
+                <div class="button-holder">
+                  <a href="#" class="button button--type-B">戻る</a>
+                  <button class="button">変更する</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /inner -->
+        </section>
+        <!-- /container -->
+      </main>
+      <!-- /main -->
+      <!--#include virtual="/assets/include/footer.html" -->
+    </div>
+    <!-- /mypage-container -->
+  </div>
+  <!--#include virtual="/assets/include/script.html" -->
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!--#include virtual="/assets/include/viewport.html" -->
+  <title>最終学歴編集画面</title>
+  <!--#include virtual="/assets/include/stylesheet.html" -->
+</head>
+
+<body class="is-fluid">
+  <div class="l-page">
+    <div class="l-mypage-container">
+      <!--#include virtual="/assets/include/spmenu/spmenu_login.html" -->
+      <!--#include virtual="/assets/include/header/header_mypage_login.html" -->
+      <!--#include virtual="/assets/include/sidebar.html" -->
+      <main class="l-main t-color-optional">
+        <section class="l-container-ml">
+          <div class="l-inner">
+            <div class="section-header">
+              <p class="heading heading--large">会員情報</p>
+            </div>
+            <!-- /section-header -->
+            <div class="l-container-ls">
+              <div class="table p-table--fixed">
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">最終学歴</p>
+                  </div>
+                  <div class="table-section__body p-table-section__body--blank"></div>
+                </div>
+                <!-- /table-section -->
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">卒業年</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--middle">
+                        <select id="birthday_year" class="js-custom-selectbox" style="display: none;">
+                          <option value="">2018</option>
+                          <option value="">2019</option>
+                          <option value="">2020</option>
+                          <option value="">2021</option>
+                          <option value="">2022</option>
+                          <option value="">2023</option>
+                          <option value="">2024</option>
+                          <option value="">2025</option>
+                          <option value="">2026</option>
+                          <option value="">2027</option>
+                          <option value="">2028</option>
+                          <option value="">2029</option>
+                          <option value="">2030</option>
+                          <option value="">2031</option>
+                          <option value="">2032</option>
+                          <option value="">2033</option>
+                          <option value="">2034</option>
+                          <option value="">2035</option>
+                          <option value="">2036</option>
+                          <option value="">2037</option>
+                          <option value="">2038</option>
+                          <option value="">2039</option>
+                          <option value="">2040</option>
+                          <option value="">2041</option>
+                          <option value="">2042</option>
+                          <option value="">2043</option>
+                          <option value="">2044</option>
+                          <option value="">2045</option>
+                          <option value="">2046</option>
+                          <option value="">2047</option>
+                          <option value="">2048</option>
+                          <option value="">2049</option>
+                          <option value="">2050</option>
+                          <option value="">2051</option>
+                          <option value="">2052</option>
+                          <option value="">2053</option>
+                          <option value="">2054</option>
+                          <option value="">2055</option>
+                          <option value="">2056</option>
+                          <option value="">2057</option>
+                          <option value="">2058</option>
+                          <option value="">2059</option>
+                          <option value="">2060</option>
+                          <option value="">2061</option>
+                          <option value="">2062</option>
+                          <option value="">2063</option>
+                          <option value="">2064</option>
+                          <option value="">2065</option>
+                          <option value="">2066</option>
+                          <option value="">2067</option>
+                          <option value="">2068</option>
+                          <option value="">2069</option>
+                          <option value="">2070</option>
+                          <option value="">2071</option>
+                          <option value="">2072</option>
+                          <option value="">2073</option>
+                          <option value="">2074</option>
+                          <option value="">2075</option>
+                          <option value="">2076</option>
+                          <option value="">2077</option>
+                          <option value="">2078</option>
+                          <option value="">2079</option>
+                          <option value="">2080</option>
+                          <option value="">2081</option>
+                          <option value="">2082</option>
+                          <option value="" selected="">---</option>
+                        </select>
+                        <label class="fp-label" for="birthday_year">年</label>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>卒業年を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <!-- /table-section -->
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">学校区分</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--long">
+                        <select id="prefecture_code" class="js-custom-selectbox" style="display: none;">
+                          <option value="">大学</option>
+                          <option value="">大学院</option>
+                          <option value="">専門学校</option>
+                          <option value="">短大</option>
+                          <option value="">高等専門学校</option>
+                          <option value="">高等学校</option>
+                          <option value="">その他学校</option>
+                          <option value="" selected="">---</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>学校区分を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">学校名</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="form-parts form-parts--full">
+                      <p class="fp-text fp-text--long">
+                        <input class="fp-text__input" type="email" name="email" id="email" placeholder="">
+                      </p>
+                    </div>
+                    <div class="error-msg">
+                      <p>学校名を入力してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">学部・学科名</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="form-parts form-parts--full">
+                      <p class="fp-text fp-text--long">
+                        <input class="fp-text__input" type="email" name="email" id="email" placeholder="">
+                      </p>
+                    </div>
+                    <div class="error-msg">
+                      <p>学部・学科名を入力してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+                <div class="table-section">
+                  <div class="table-section__head u-cf">
+                    <p class="table-section__term">卒業区分</p>
+                    <span class="required-label">必須</span>
+                  </div>
+                  <!-- /table-section__head -->
+                  <div class="table-section__body">
+                    <div class="fp-select">
+                      <div class="fp-select__input fp-select__input--long">
+                        <select id="prefecture_code" class="js-custom-selectbox" style="display: none;">
+                          <option value="">卒業</option>
+                          <option value="">卒業見込み</option>
+                          <option value="">休学</option>
+                          <option value="">中退</option>
+                          <option value="" selected="">---</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="error-msg">
+                      <p>学校区分を選択してください。</p>
+                    </div>
+                  </div>
+                  <!-- /table-section__body -->
+                </div>
+              </div>
+              <!-- /table -->
+            </div>
+            <!-- /container -->
+            <div class="l-container-ls">
+              <form action="">
+                <div class="button-holder">
+                  <a href="#" class="button button--type-B">戻る</a>
+                  <button class="button">変更する</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /inner -->
+        </section>
+        <!-- /container -->
+      </main>
+      <!-- /main -->
+      <!--#include virtual="/assets/include/footer.html" -->
+    </div>
+    <!-- /mypage-container -->
+  </div>
+  <!--#include virtual="/assets/include/script.html" -->
+</body>
+
+</html>
